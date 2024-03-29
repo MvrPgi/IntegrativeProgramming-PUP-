@@ -10,7 +10,7 @@ class NumberAnalyzer:
         self.sum_even = 0
         self.count_negative = 0
         self.count_positive = 0
-        self.count_between_50_and_100 = 0
+        self.In_Range = 0
 
     def analyze_numbers(self, numbers):
         for number in numbers:
@@ -22,16 +22,16 @@ class NumberAnalyzer:
                 self.smallest = number
             if number % 2 == 0:
                 self.count_even += 1
-                self.sum_even += number
+                self.sum_even += number # add previous even number to the number
             else:
                 self.count_odd += 1
-                self.sum_odd += number
+                self.sum_odd += number # add previous odd number to the number
             if number < 0:
-                self.count_negative += 1
+                self.count_negative += 1 # + 1 to count_negative variable
             elif number > 0:
-                 self.count_positive +=1
+                 self.count_positive +=1 # + 1 to count_positive variable  
             if 50 <= number <= 100:
-                self.count_between_50_and_100 += 1
+                self.In_Range += 1 # increment to inRange variable when satisfied
 
     def print_results(self):
         print("________________________________________________")
