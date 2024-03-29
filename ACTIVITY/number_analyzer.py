@@ -1,4 +1,3 @@
-# number_analyzer.py
 
 class NumberAnalyzer:
     def __init__(self):
