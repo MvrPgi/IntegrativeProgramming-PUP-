@@ -1,15 +1,31 @@
 FirstName = input("Enter First Name: ")
-LastName = input ("Enter Your Last Name: ")
-print("Welcome ", FirstName,LastName)
+LastName = input("Enter Last Name: ")
+print("Welcome ", FirstName, LastName)
 print("How Many Amazing Facts About Yourself You Can Share?")
 
 
 N = int(input(""))
-facts = [] # To Store The Facts
+facts = []
 for i in range(N):
-    facts = input(f"Fact{i+1}: ")
-    break
+    fact = input(f"Fact{i+1}: ")
+    facts.append(fact)
+print("", len(facts))
+for i, fact in enumerate(facts, 1):
+    print(f"Fact{i}:{fact}")
 
-print("",len(facts))
-for i, fact in enumerate(facts):
-  print(f"Fact{i+1}:{fact}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
