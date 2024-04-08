@@ -45,8 +45,26 @@
 
 
 
-thislist =["orange","kiwi","melon","mango"]
-tropical =["raspberry"]
-thislist.append(tropical)
-for x in thislist:
-    print(x, end= ' ')
+#thislist =["orange","kiwi","melon","mango"]
+#tropical =["raspberry"]
+#thislist.append(tropical)
+#for x in thislist:
+#[rint(x, end= ' ')
+
+
+
+## LOOP APPEND
+#thislist =["apple","banana","cherry"]
+#tropical =["orange","kiwi","melon","mango"]
+#newlist = []
+#for x in tropical:
+    #if "a" in x:
+      #newlist.append(x)
+
+#print(newlist)
+
+#SORTING
+thislist =["apple","banana","cherry"]
+tropical =["orange","kiwi","melon","mango"]
+tropical.sort
+print(tropical)
