@@ -64,7 +64,7 @@
 #print(newlist)
 
 #SORTING
-thislist =["apple","banana","cherry"]
-tropical =["orange","kiwi","melon","mango"]
-tropical.sort
-print(tropical)
+#thislist =["apple","banana","cherry"]
+#tropical =["orange","kiwi","melon","mango"]
+#tropical.sort
+#print(tropical)
