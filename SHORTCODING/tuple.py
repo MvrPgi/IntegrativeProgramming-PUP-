@@ -66,6 +66,5 @@
 #LOOP APPEND
 thislist =["apple","banana","cherry"]
 tropical =["orange","kiwi","melon","mango"]
-
 tropical.sort
 print(tropical)
