@@ -63,7 +63,7 @@
 
 #print(newlist)
 
-#LOOP APPEND
+#SORTING
 thislist =["apple","banana","cherry"]
 tropical =["orange","kiwi","melon","mango"]
 tropical.sort
