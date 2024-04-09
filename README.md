@@ -1,2 +1,2 @@
 # pyACTY
-# This is my Phyton Practice Repository
+This is my Phyton Practice Repository
