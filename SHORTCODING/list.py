@@ -3,9 +3,9 @@
 #print(thislist)
 
 
-#thislist =["apple","banana","cherry","orange","kiwi","melon","mango"]
-#thislist.insert(2,"raspberry")
-#print(thislist)
+thislist =["apple","banana","cherry","orange","kiwi","melon","mango"]
+thislist.insert(2,"raspberry")
+print(thislist)
 
 #tropical =["orange","kiwi","melon","mango"]
 
@@ -66,14 +66,14 @@
 #SORTING
 #thislist =["apple","banana","cherry"]
 #tropical =["orange","kiwi","melon","mango"]
-#tropical.sort
+#tropical.sort()
 #print(tropical)
 
-list1 = ["a","b","c"]
-list2 = [1,2,3]
+#list1 = ["a","b","c"]
+#list2 = [1,2,3]
 
-for x,y in zip(list2,list1):
-    print(str(x)+y, end=" ")
+#for x,y in zip(list2,list1):
+    #print(str(x)+y, end=" ")
 
 #print(list1)
 
