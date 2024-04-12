@@ -30,14 +30,32 @@
 ## Assuming we have a list fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango", "avocado"],
 ## what will be the python code to remove "avocado" from the list?  *NOTE: please don't include any extra space in your answer
 
+#listfruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango","avocado"]
+
+#listfruits.remove("avocado")
+#print(listfruits)
+
 ##Assuming we have a list fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"], 
 ## what will be the python code to print the number of items in the list? *NOTE: please don't include any extra space in your answer
+
+#listfruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#print(len(listfruits))
 
 ## Assuming we have a list fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"], 
 ## what will be the python code to print "banana" from the list? *NOTE: please don't include any extra space in your answer
 
+#listfruits =["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#print(listfruits[1])
+
 ##Assuming we have a list fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"],
 ##what will be the python code to print "banana" up to "melon" from the list?  *NOTE: please don't include any extra space in your answer
 
+#listfruits =["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#print(listfruits[1:6])
+
 ## Assuming we have a list fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"],
 ## what will be the python code to insert "watermelon" before "melon"  from the list?  *NOTE: please don't include any extra space in your answer
+
+#listfruits =["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+#listfruits.insert(-2,"watermelon")
+#print(listfruits)
