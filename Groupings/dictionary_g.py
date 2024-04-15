@@ -18,24 +18,30 @@
 #classDetails["Age"] = student_age
 #print(classDetails)
 
-for _ in range(2): ## MAKE 2 INPUTS
+classDetails = []
+while True : 
   student_name=input("Enter Student Name: ") 
+  if student_name.lower() == 'none':
+    break
   student_gender=input("Enter Student Gender: ")
   student_age=input("Enter Student Age: ")
 
-  namelist = [student_name]  ## STORES THEM IN A LIST
-  genderlist =[student_gender]
-  agelist= [student_age]
+  student_details={              # MAKES THE LIST INTO DICTIONARY
+  "name"  : student_name  ,
+  "gender" :student_gender ,
+  "age" : student_age
+  
+  }
 
-classDetails={              # MAKES THE LIST INTO DICTIONARY
-  "name"  :[namelist]  ,
-  "gender" :[genderlist] ,
-  "age" :[agelist]
+  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT 
+  classDetails.append(student_details) # APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
 
-Fclass = {}
-Fclass = Fclass + classDetails #STORES THE CLASSDETAILS IN A SEPARATE DICTIONARY BEFORE ITERATION
+  for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
+      print(f"Student {idx}: {student}")
 
 
 
-}
+
+
+
 
