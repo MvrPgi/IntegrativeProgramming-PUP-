@@ -32,9 +32,10 @@ classDetails={              # MAKES THE LIST INTO DICTIONARY
   "gender" :[genderlist] ,
   "age" :[agelist]
 
+Fclass = {}
+Fclass = Fclass + classDetails #STORES THE CLASSDETAILS IN A SEPARATE DICTIONARY BEFORE ITERATION
+
+
 
 }
-classDetails["name"].append(student_name)
-classDetails["gender"].append(student_gender)
-classDetails["age"].append(namelist)
-print(classDetails)
+
