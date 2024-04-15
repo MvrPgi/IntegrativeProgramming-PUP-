@@ -26,14 +26,14 @@ while True :
   student_gender=input("Enter Student Gender: ")
   student_age=input("Enter Student Age: ")
 
-  student_details={              # MAKES THE LIST INTO DICTIONARY
+  student_details={              # MAKES THE INPUT INTO DICTIONARY
   "name"  : student_name  ,
   "gender" :student_gender ,
   "age" : student_age
   
   }
 
-  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
+  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS 
  
   classDetails.append(student_details) 
   for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
