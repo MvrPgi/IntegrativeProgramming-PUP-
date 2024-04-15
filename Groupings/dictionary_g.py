@@ -39,6 +39,12 @@ while True :
   for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
       print(f"Student {idx}: {student}")
 
+  values = [ 
+  list(d.values()) for d in classDetails if isinstance(d,dict)  ## ITERATES WITHIN THE LOOP THAT GETS THE VALUES OF THE INPUT
+  ]
+  print(values)
+
+
 ##  Ascending Format(age) 
 ##  Ascending Alphabethical(name) 
 
