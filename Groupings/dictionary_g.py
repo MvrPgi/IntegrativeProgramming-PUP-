@@ -17,10 +17,12 @@
 #classDetails["Gender"] = student_gender
 #classDetails["Age"] = student_age
 #print(classDetails)
+
 classDetails = []
 while True : 
   student_name=input("Enter Student Name: ") 
-  student_name == 'none';
+  if student_name.lower() == 'none':
+    break
   student_gender=input("Enter Student Gender: ")
   student_age=input("Enter Student Age: ")
 
@@ -30,9 +32,11 @@ while True :
   "age" : student_age
   
   }
-  classDetails.append(student_details)
 
-  for idx, student in enumerate(classDetails, 1):
+  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT 
+  classDetails.append(student_details) # APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
+
+  for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
       print(f"Student {idx}: {student}")
 
 
