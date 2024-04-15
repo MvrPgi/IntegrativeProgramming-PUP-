@@ -33,11 +33,14 @@ while True :
   
   }
 
-  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT 
-  classDetails.append(student_details) # APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
-
+  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
+ 
+  classDetails.append(student_details) 
   for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
       print(f"Student {idx}: {student}")
+
+##  Ascending Format(age) 
+##  Ascending Alphabethical(name) 
 
 
 
