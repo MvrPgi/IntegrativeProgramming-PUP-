@@ -1,4 +1,4 @@
-   Commission
+# Commission
 # 1         7% Of Sale Or P400 Whichever is More
 # 2         10% Of Sale Or P900 Whichever is Less
 # 3         12% Of Sale
