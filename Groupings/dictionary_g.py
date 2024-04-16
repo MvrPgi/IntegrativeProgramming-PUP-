@@ -26,7 +26,7 @@ while True :
   student_gender=input("Enter Student Gender: ")
   student_age=input("Enter Student Age: ")
 
-  student_details={              # MAKES THE  INTO DICTIONARY
+  student_details={              # MAKES THE INPUT INTO DICTIONARY
   "name"  : student_name  ,
   "gender" :student_gender ,
   "age" : student_age
