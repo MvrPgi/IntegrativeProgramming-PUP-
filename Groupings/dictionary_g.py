@@ -26,14 +26,14 @@ while True :
   student_gender=input("Enter Student Gender: ")
   student_age=input("Enter Student Age: ")
 
-  student_details={              # MAKES THE INPUT INTO DICTIONARY
+  student_details={              # MAKES THE  INTO DICTIONARY
   "name"  : student_name  ,
   "gender" :student_gender ,
   "age" : student_age
   
   }
 
-  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS 
+  ## THE LOOP THAT SHOWS THE STORED DICTIONARY THAT APPENDS THE STUDENT DETAILS DICTIONARY TO CLASS DETAILS LIST
  
   classDetails.append(student_details) 
   for idx, student in enumerate(classDetails, 1):  #ITERATES THE CLASS DETAILS AND PRINTS THE EQUIVALENT INDEX OF EACH DATA
@@ -42,10 +42,10 @@ while True :
   values = [ 
   list(d.values()) for d in classDetails if isinstance(d,dict)  ## ITERATES WITHIN THE LOOP THAT GETS THE VALUES OF THE INPUT
   ]
-  print(values)
+  print(sorted(values, key=sorted))   ##  Ascending Format(age) 
 
 
-##  Ascending Format(age) 
+
 ##  Ascending Alphabethical(name) 
 
 
