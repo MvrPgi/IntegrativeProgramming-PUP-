@@ -6,18 +6,6 @@
 #student_gender=input("Enter Student Gender: ")
 #student_age=input("Enter Student Age: ")
 
-
-#classDetails ={
-#"Name": [], 
-#"Gender": [], 
-#"Age":[]
-#}
-
-#classDetails["Name"] = student_name
-#classDetails["Gender"] = student_gender
-#classDetails["Age"] = student_age
-#print(classDetails)
-
 classDetails = []
 while True : 
   student_name=input("Enter Student Name: ") 
@@ -43,10 +31,6 @@ while True :
   list(d.values()) for d in classDetails if isinstance(d,dict)  ## ITERATES WITHIN THE LOOP THAT GETS THE VALUES OF THE INPUT
   ]
   print(sorted(values, key=sorted))   ##  Ascending Format(age) 
-
-
-
-##  Ascending Alphabethical(name) 
 
 
 

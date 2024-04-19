@@ -2,8 +2,8 @@
 # sets are written with curly bracket
 #unordered unindex 
 
-thisset = {"apple", "banana","cherry",}
-print(thisset)
+#thisset = {"apple", "banana","cherry",}
+#print(thisset)
 #print(len(thisset))
 #for x in thisset:
     #print("banana" in thisset)
