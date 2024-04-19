@@ -3,9 +3,9 @@
 #print(thislist)
 
 
-thislist =["apple","banana","cherry","orange","kiwi","melon","mango"]
-thislist.insert(2,"raspberry")
-print(thislist)
+#thislist =["apple","banana","cherry","orange","kiwi","melon","mango"]
+#thislist.insert(2,"raspberry")
+#print(thislist)
 
 #tropical =["orange","kiwi","melon","mango"]
 
@@ -77,8 +77,10 @@ print(thislist)
 
 #print(list1)
 
-#list1 = ["a","b","c"]
-#list2 = [1,2,3]
+list1 = ["a","b","c"]
+list2 = [1,2,3]
+list2.remove(4)
+print(list2)
 
 #for i in enumerate(list1):
     #list1.insert(2*i ,i)
