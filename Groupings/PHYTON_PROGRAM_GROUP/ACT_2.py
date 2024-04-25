@@ -43,7 +43,6 @@ def area():
     return P3
     
 
-
 def downpayment(total_price):
   downpayment=float(input("Downpayment Amount: "))
   if downpayment < 0.2 * total_price:
