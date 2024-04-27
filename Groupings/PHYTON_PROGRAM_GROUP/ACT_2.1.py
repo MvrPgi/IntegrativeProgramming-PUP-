@@ -46,4 +46,5 @@ print("Discount Amount:", '{:,.2f}'.format(discount_info[3]))
 print("\nInterest:", '{:.0%}'.format(loan_info[0]))
 print("Interest Amount:", '{:,.2f}'.format(loan_info[1]))
 print("Contract Price:", '{:,.2f}'.format(loan_info[2]))
-print("Monthly Amortization:", '{:,.2f}'.format(loan_info[3]))
+print("Monthly Amortization:", '{:,.2f}'.format(loan_info[3])
+    
