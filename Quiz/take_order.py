@@ -11,8 +11,8 @@ class TakeOrder:
         print("- Hawaiian")
 
         print("\nPossible Discounts:")
-        print("- Senior Citizen")
-        print("- VIPCard")
+        print("- Senior Citizen = 20%")
+        print("- VIPCard =  10%") 
 
     def take_order(self):
         self.display_options()
