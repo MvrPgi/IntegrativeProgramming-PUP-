@@ -15,45 +15,47 @@
 #Display Total Amount Due.
 #Accept Cash Amount Given by Customer.
 
-
+def MaterialPrice():
 # PRINT THE PRICE 
-print("MATERIALS")
-print("-----------")
-print("ENTER THE COST OF THE FOLLOWING")
-print("\nPAPER = 1\nPENCIL = 5\nSCISSORS = 25\nERASER = 2.50")
-print("\nPURCHASE")
-print("-----------")
-print("HOW MANY ITEMS OF THE FOLLOWING DID YOU BUY")
+  print("MATERIALS")
+  print("-----------")
+  print("ENTER THE COST OF THE FOLLOWING")
+  print("\nPAPER = 1\nPENCIL = 5\nSCISSORS = 25\nERASER = 2.50")
+  print("\nPURCHASE")
+  print("-----------")
+  print("HOW MANY ITEMS OF THE FOLLOWING DID YOU BUY")
 
-#GIVEN PRICE VARIABLE
-ppaper = 1
-ppencil = 5
-sscissors = 25
-eeraser = 2.50
-
-
-# INPUT VARIABLE
-paper = float(input("PAPER :  "))
-pencil = float(input("PENCIL :  "))
-scissors = float(input("SCISSORS :  "))
-eraser = float(input("ERASER :  "))
-
-#FORMULA FOR TOTAL PRICE AND NO OF ITEMS
-output = (paper*ppaper)+(pencil*ppencil)+(scissors*sscissors)+(eeraser*eraser)
-No_items= paper+pencil+scissors+eraser
+  #GIVEN PRICE VARIABLE
+  ppaper = 1
+  ppencil = 5
+  sscissors = 25
+  eeraser = 2.50
 
 
-#PRINT THE FORMULA VARIABLE
-print(f"THE TOTAL PRICE IS:P {output}")
-print(f"NO OF ITEMS:  {No_items}")
+  # INPUT VARIABLE
+  paper = float(input("PAPER :  "))
+  pencil = float(input("PENCIL :  "))
+  scissors = float(input("SCISSORS :  "))
+  eraser = float(input("ERASER :  "))
 
-# INPUT PAYMENT AND FORMULA FOR CHANGE
-payment = float(input("Enter Cash:P "))
-change = payment-output
-print(f"P{change}")
+  #FORMULA FOR TOTAL PRICE AND NO OF ITEMS
+  output = (paper*ppaper)+(pencil*ppencil)+(scissors*sscissors)+(eeraser*eraser)
+  No_items= paper+pencil+scissors+eraser
 
-# PRICE BEFORE THE VAT
 
-#PRICE AFTER THE VAT
+  #PRINT THE FORMULA VARIABLE
+  print(f"THE TOTAL PRICE IS  :P {output}")
+  print(f"NO OF ITEMS :  {No_items}")
 
-# OUTPUT 2
+  # INPUT PAYMENT AND FORMULA FOR CHANGE
+  payment = float(input("ENTER CASH :P   "))
+  change = payment-output
+  print(f"CHANGE  :   {change}")
+  vat = output*0.12
+  print(f"PRICE BEFORE THE VAT  : {output}")
+  print(f"VAT 12% :  {vat}")
+
+
+
+
+MaterialPrice()
