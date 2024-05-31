@@ -1,3 +1,5 @@
+# list - is a collection which is ordered and changeable. Allows duplicate members.
+
 #thislist =["apple","banana","cherry","orange","kiwi","melon","mango"]
 #thislist[1:3] = ["strawberry","raspberry"]
 #print(thislist)

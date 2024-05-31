@@ -1,6 +1,7 @@
 # sets are use to store items in a single varialbe
 # sets are written with curly bracket
-#unordered unindex 
+# sets are unordered and unindexed
+
 
 #thisset = {"apple", "banana","cherry",}
 #print(thisset)
