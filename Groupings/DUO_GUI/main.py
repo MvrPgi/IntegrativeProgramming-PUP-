@@ -54,11 +54,11 @@ class APP(tk.Tk):
 
             scholar_type = self.var.get()
             if scholar_type == 1:  # Use integer comparison for scholar_type
-                total_amount = units_enrolled * 10 + year_level_fee + other_fees
-            elif scholar_type == 2:
-                total_amount = (units_enrolled * 10 + year_level_fee + other_fees) / 2
-            else:
                 total_amount = units_enrolled * 10 + year_level_fee + other_fees  # Default case for non-scholars
+            elif scholar_type == 2:
+                total_amount = (units_enrolled * 10 + year_level_fee + other_fees) / 2 # Partial Scholar
+            else:
+                total_amount = 0  # Full Scholar
 
             self.TotalAmount.delete(0, tk.END)
             self.TotalAmount.insert(0, total_amount)
@@ -87,24 +87,24 @@ class APP(tk.Tk):
         super().__init__()
 
         self.L1 = tk.Label(self, text="Student Number:")
-        self.L1.pack()
+        self.L1.grid(row=0, column=0, padx=5, pady=5, sticky="w")
         self.StudentName = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000")
-        self.StudentName.pack()
+        self.StudentName.grid(row=0, column=1, padx=5, pady=5)
 
         self.L2 = tk.Label(self, text="Units Enrolled:")
-        self.L2.pack()
+        self.L2.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         self.UnitsEnrolled = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000")
-        self.UnitsEnrolled.pack()
+        self.UnitsEnrolled.grid(row=1, column=1, padx=5, pady=5)
 
         self.L3 = tk.Label(self, text="Year Level:")
-        self.L3.pack()
+        self.L3.grid(row=2, column=0, padx=5, pady=5, sticky="w")
         self.n = tk.StringVar()
         self.YearLevel = ttk.Combobox(self, width=25, textvariable=self.n)
         self.YearLevel['values'] = ('1st Year', '2nd Year', '3rd Year', '4th Year', '5th Year')
-        self.YearLevel.pack()
+        self.YearLevel.grid(row=2, column=1, padx=5, pady=5)
 
         self.L4 = tk.Label(self, text="Other Fees:")
-        self.L4.pack()
+        self.L4.grid(row=3, column=0, padx=5, pady=5, sticky="w")
         self.LabFeeVar = tk.BooleanVar()
         self.RegCardVar = tk.BooleanVar()
         self.CatalystVar = tk.BooleanVar()
@@ -117,32 +117,32 @@ class APP(tk.Tk):
         self.StudentCouncil = tk.Checkbutton(self, text="Student Council\tP50", onvalue=True, offvalue=False, variable=self.StudentCouncilVar)
         self.StudentID = tk.Checkbutton(self, text="Student ID\tP50", onvalue=True, offvalue=False, variable=self.StudentIDVar)
         self.OtherMisc = tk.Checkbutton(self, text="Other Miscellaneous\tP100", onvalue=True, offvalue=False, variable=self.OtherMiscVar)
-        self.LabFee.pack()
-        self.RegCard.pack()
-        self.Catalyst.pack()
-        self.StudentCouncil.pack()
-        self.StudentID.pack()
-        self.OtherMisc.pack()
+        self.LabFee.grid(row=4, column=0, padx=5, pady=5, sticky="w")
+        self.RegCard.grid(row=5, column=0, padx=5, pady=5, sticky="w")
+        self.Catalyst.grid(row=6, column=0, padx=5, pady=5, sticky="w")
+        self.StudentCouncil.grid(row=4, column=1, padx=5, pady=5, sticky="w")
+        self.StudentID.grid(row=5, column=1, padx=5, pady=5, sticky="w")
+        self.OtherMisc.grid(row=6, column=1, padx=5, pady=5, sticky="w")
 
         self.L5 = tk.Label(self, text="Scholarship Grant")
-        self.L5.pack()
-        self.var = tk.IntVar(value=1)  # Initialize var as IntVar directly
+        self.L5.grid(row=7, column=0, padx=5, pady=5, sticky="w")
+        self.var = tk.IntVar(value=1)
         self.NonScholar = tk.Radiobutton(self, text='Non-Scholar', variable=self.var, value=1)
         self.PartialScholar = tk.Radiobutton(self, text='Partial Scholar', variable=self.var, value=2)
         self.FullScholar = tk.Radiobutton(self, text='Full Scholar', variable=self.var, value=3)
-        self.NonScholar.pack()
-        self.PartialScholar.pack()
-        self.FullScholar.pack()
+        self.NonScholar.grid(row=7, column=1, padx=5, pady=5, sticky="w")
+        self.PartialScholar.grid(row=8, column=1, padx=5, pady=5, sticky="w")
+        self.FullScholar.grid(row=9, column=1, padx=5, pady=5, sticky="w")
 
         self.L6 = tk.Label(self, text="Total Amount")
-        self.L6.pack()
-        self.TotalAmount = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000",state = 'readonly')
-        self.TotalAmount.pack()
+        self.L6.grid(row=14, column=0, padx=5, pady=5, sticky="w")
+        self.TotalAmount = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000", state='readonly')
+        self.TotalAmount.grid(row=14, column=1, padx=5, pady=5)
 
         self.CLEAR = tk.Button(self, text="CLEAR", command=self.Clear,)
-        self.CLEAR.pack()
+        self.CLEAR.grid(row=15, column=0, padx=5, pady=5)
         self.COMPUTE = tk.Button(self, text="COMPUTE", command=self.Compute)
-        self.COMPUTE.pack()
+        self.COMPUTE.grid(row=15, column=1, padx=5, pady=5)
 
 if __name__ == "__main__":
     app = APP()
