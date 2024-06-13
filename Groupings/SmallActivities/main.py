@@ -1,5 +1,5 @@
 
-from number_analyzer import NumberAnalyzer
+from Groupings.SmallActivities.number_analyzer import NumberAnalyzer
 #1. output the sum of all the inputted numbers
 #2. output how many numbers are even numbers and odd numbers
 #3. output the sum of all even numbers and sum of all odd numbers

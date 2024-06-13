@@ -139,7 +139,7 @@ class APP(tk.Tk):
         self.TotalAmount = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000", state='readonly')
         self.TotalAmount.grid(row=14, column=1, padx=5, pady=5)
 
-        self.CLEAR = tk.Button(self, text="CLEAR", command=self.Clear,)
+        self.CLEAR = tk.Button(self, text="CLEAR", command=self.Clear)
         self.CLEAR.grid(row=15, column=0, padx=5, pady=5)
         self.COMPUTE = tk.Button(self, text="COMPUTE", command=self.Compute)
         self.COMPUTE.grid(row=15, column=1, padx=5, pady=5)
