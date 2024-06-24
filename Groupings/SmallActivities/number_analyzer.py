@@ -45,3 +45,4 @@ class NumberAnalyzer:
         print("________________________________________________")
         print("Numbers between 50 and 100:", self.count_between_50_and_100)
         print("________________________________________________")
+##

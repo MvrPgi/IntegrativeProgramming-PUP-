@@ -1,4 +1,4 @@
-#Design A Tkinter Frame
+#Design A Tkinter Frame#
 
 import tkinter as tk
 from tkinter import ttk  # Change this to 'from tkinter import ttk' to avoid errors

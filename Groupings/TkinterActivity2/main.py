@@ -19,7 +19,7 @@ class CalculatorApp(tk.Tk):
     self.RButton2.grid(row=0, column=3, padx=5, pady=2, sticky="w")
 
 
-###
+####
     self.PrevBal = tk.Label(self, text="Previous Balance:",)
     self.PrevBal.grid(row=1, column=0, padx=5, pady=5, sticky="w")
     self.PrevBalEntry = tk.Entry(self, width=25, bg="#FFFFFF", fg="#000000",state='readonly')
