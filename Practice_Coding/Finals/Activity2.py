@@ -5,6 +5,9 @@ from tkinter import messagebox
 class JollyMcKing(tk.Tk):
   def __init__(self):
       super().__init__()
+      self.geometry("400x300")
+      self.resizable(False,False)
+      
 
 
 
