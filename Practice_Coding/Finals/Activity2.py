@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import END, ttk
+from tkinter import END, W, ttk
 from tkinter import messagebox
 
 class JollyMcKing(tk.Tk):
@@ -8,68 +8,71 @@ class JollyMcKing(tk.Tk):
 
 
 
+      self.frame = tk.Frame(self)
+      self.frame.grid(row=0, column=0, padx=0, pady=10,sticky='nsew')
 
-
-      self.Username = tk.Label(self, text = "USER NAME:")
+      self.Username = tk.Label(self.frame, text = "Username:")
       self.Username.grid(row=1, column = 1)
-      self.UsernameEntry = tk.Entry(self, width= 25)
+      self.UsernameEntry = tk.Entry(self.frame, width= 25)
       self.UsernameEntry.grid(row=1, column = 2)
-
-      self.Password = tk.Label(self, text = "PASSWORD ")
+      self.Password = tk.Label(self.frame, text = "Password ")
       self.Password.grid(row= 2,column = 1)
-      self.PasswordEntry = tk.Entry(self, width= 25,show='*')
+      self.PasswordEntry = tk.Entry(self.frame, width= 25,show='*')
       self.PasswordEntry.grid(row= 2,column = 2)
-
-
-      self.ButtonLogin = tk.Button(self, text= "OK",command=self.Login)
+      self.ButtonLogin = tk.Button(self.frame, text= "OK",command=self.Login)
       self.ButtonLogin.grid(row= 2, column=3)
 
-      self.OrderLabel = tk.Label(self, text = "CHOOSE YOUR ORDER")
-      self.OrderLabel.grid(row=3, column =2)
+      self.frame2 = tk.Frame(self)
+      self.frame2.grid(row=1, column = 0, padx =10,pady=10,sticky='nsew')
+
+      self.OrderLabel = tk.Label(self.frame2, text = "Choose Your Order")
+      self.OrderLabel.grid(row=2, column =0)
 
       self.FirstMealVariable = tk.BooleanVar()
-      self.FirstMeal = tk.Checkbutton(self, text= "Value Meal #1 P25.00",onvalue=True, offvalue=False, variable= self.FirstMealVariable)
-      self.FirstMeal.grid(row=4, column =2)
+      self.FirstMeal = tk.Checkbutton(self.frame2, text= "Value Meal #1 P25.00",onvalue=True, offvalue=False, variable= self.FirstMealVariable)
+      self.FirstMeal.grid(row=3, column =0)
 
       self.SecondMealVariable = tk.BooleanVar()
-      self.SecondMeal = tk.Checkbutton(self, text= "Value Meal #2 P30.00",onvalue=True, offvalue=False, variable= self.SecondMealVariable)
-      self.SecondMeal.grid(row=5, column =2)
+      self.SecondMeal = tk.Checkbutton(self.frame2, text= "Value Meal #2 P30.00",onvalue=True, offvalue=False, variable= self.SecondMealVariable)
+      self.SecondMeal.grid(row=4, column =0)
 
       self.ThirdMealVariable = tk.BooleanVar()
-      self.ThirdMeal = tk.Checkbutton(self, text= "Value Meal #3 P30.00",onvalue=True, offvalue=False, variable= self.ThirdMealVariable)
-      self.ThirdMeal.grid(row=6, column =2)
+      self.ThirdMeal = tk.Checkbutton(self.frame2, text= "Value Meal #3 P30.00",onvalue=True, offvalue=False, variable= self.ThirdMealVariable)
+      self.ThirdMeal.grid(row=5, column =0)
 
       self.SoftDrinksVariable = tk.StringVar()
-      self.SoftDrinks = ttk.Combobox(self, width= 25, textvariable=self.SoftDrinksVariable)
+      self.SoftDrinks = ttk.Combobox(self.frame2, width= 25, textvariable=self.SoftDrinksVariable)
+
+  
       self.SoftDrinks['values']=('Coke','Sprite','RootBeer')
-      self.SoftDrinks.grid(row=6, column =3)
+      self.SoftDrinks.grid(row=5, column =1)
 
       self.ExtraRiceVariable = tk.IntVar()
-      self.ExtraRice = tk.Radiobutton(self, text="Extra Rice", variable= self.ExtraRiceVariable, value =1)
-      self.ExtraRice.grid(row=7, column = 2)
+      self.ExtraRice = tk.Radiobutton(self.frame2, text="Extra Rice", variable= self.ExtraRiceVariable, value =1)
+      self.ExtraRice.grid(row=6, column = 0)
 
-      self.NoExtraRice = tk.Radiobutton(self, text="No Extra Rice", variable= self.ExtraRiceVariable, value =0)
-      self.NoExtraRice.grid(row=7, column = 3)
+      self.NoExtraRice = tk.Radiobutton(self.frame2, text="No Extra Rice", variable= self.ExtraRiceVariable, value =0)
+      self.NoExtraRice.grid(row=6, column = 1)
 
     
-      self.TotalBill = tk.Label(self, text="Total Bill Is:")
-      self.TotalBillEntry = tk.Entry(self,width=25)
-      self.TotalBill.grid(row =8, column =2)
-      self.TotalBillEntry.grid(row = 8, column =3)
+      self.TotalBill = tk.Label(self.frame2, text="Total Bill Is:")
+      self.TotalBillEntry = tk.Entry(self.frame2,width=25)
+      self.TotalBill.grid(row =7, column =0)
+      self.TotalBillEntry.grid(row = 7, column =1)
 
 
 
-      self.ComputeButton = tk.Button(self, text="Compute"
+      self.ComputeButton = tk.Button(self.frame2, text="Compute"
                                     ,command=self.Compute)
-      self.ComputeButton.grid(row = 7, column =4)
+      self.ComputeButton.grid(row = 6, column =3)
       
-      self.ClearButton = tk.Button(self, text="Clear"  
+      self.ClearButton = tk.Button(self.frame2, text="Clear"  
                                   ,command=self.Clear)
-      self.ClearButton.grid(row= 9, column=3)
+      self.ClearButton.grid(row= 8, column=0)
           
-      self.CloseButton = tk.Button(self, text="Close"  
+      self.CloseButton = tk.Button(self.frame2, text="Close"  
                                   ,command=self.close)
-      self.CloseButton.grid(row= 9, column=4)
+      self.CloseButton.grid(row= 8, column=1)
 
 
       self.FirstMeal.config(state='disabled')
@@ -93,6 +96,8 @@ class JollyMcKing(tk.Tk):
         
         if password == "AlwynPythonGods" and not username:
            messagebox.showerror("Invalid Action", "Please enter your username")
+        elif password != "AlwynPythonGods":
+           messagebox.showinfo("Invalid Action", "Wrong Password")
            return
         elif password =="AlwynPythonGods":
     
