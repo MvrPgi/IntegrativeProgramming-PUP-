@@ -32,6 +32,7 @@ class NumberAnalyzer:
                  self.count_positive +=1 # + 1 to count_positive variable  
             if 50 <= number <= 100:
                 self.In_Range += 1 # increment to inRange variable when satisfied
+            
 
     def print_results(self):
         print("________________________________________________")
@@ -43,6 +44,5 @@ class NumberAnalyzer:
         print("________________________________________________")
         print("Number of negative numbers:", self.count_negative, "\nNumber of positive numbers:", self.count_positive)
         print("________________________________________________")
-        print("Numbers between 50 and 100:", self.count_between_50_and_100)
+        print("Number of numbers between 50-100:", self.In_Range)   
         print("________________________________________________")
-##
