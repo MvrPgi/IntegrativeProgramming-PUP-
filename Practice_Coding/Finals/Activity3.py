@@ -194,28 +194,28 @@ class TravelTours(tk.Tk):
      if self.IloIloTripVariable.get() == True:
         self.IloIloTripCapacity.config(state='normal')
         self.IloIloTripDate.config(state='normal')
-     else:
+     elif self.IloIloTripVariable.get() == False:
         self.IloIloTripCapacity.config(state='disabled')
         self.IloIloTripDate.config(state='disabled')
 
      if self.CebuTripVariable.get() == True:
         self.CebuTripCapacity.config(state='normal')
         self.CebuTripDate.config(state='normal')
-     else:
+     elif self.CebuTripVariable.get() == False:
         self.CebuTripCapacity.config(state='disabled')
         self.CebuTripDate.config(state='disabled')
 
      if self.CebuBoholTripVariable.get() == True:
         self.CebuBoholTripCapacity.config(state='normal')
         self.CebuBoholTripDate.config(state='normal')
-     else:
+     elif self.CebuBoholTripVariable.get() == False:
         self.CebuBoholTripCapacity.config(state='disabled')
         self.CebuBoholTripDate.config(state='disabled')
         
      if self.IlocosTripVariable.get() == True:
         self.IlocosTripCapacity.config(state='normal')
         self.IlocosTripDate.config(state='normal')
-     else:
+     elif self.IlocosTripVariable.get() == False:
         self.IlocosTripCapacity.config(state='disabled')
         self.IlocosTripDate.config(state='disabled')
 
