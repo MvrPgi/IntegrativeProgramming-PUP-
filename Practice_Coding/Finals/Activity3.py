@@ -226,7 +226,6 @@ class TravelTours(tk.Tk):
 
 
 
-
 if __name__ == "__main__":
   App = TravelTours()
   App.mainloop()
