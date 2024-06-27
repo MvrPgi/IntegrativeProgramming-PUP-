@@ -2,14 +2,14 @@
 # Ordered, Changable, Do Not Allow Duplicates
 # Curly Bracket and have keys and values
 
-colorlist = ["red","white","blue"]
-thisdict ={
-  "brand" : "Ford",
-  "model" : "Mustang",
-  "year"  : 1999,
-  "colors":colorlist
-}
-print (thisdict)
+# colorlist = ["red","white","blue"]
+# thisdict ={
+#   "brand" : "Ford",
+#   "model" : "Mustang",
+#   "year"  : 1999,
+#   "colors":colorlist
+# }
+# print (thisdict)
 
 #USING KEY NAME
   #print(thisdict["colors"][1])
@@ -48,8 +48,8 @@ print (thisdict)
 #print(thisdict)
 
 #DELETE
-del thisdict["brand"]
-print(thisdict)
+# del thisdict["brand"]
+# print(thisdict)
 
 
 

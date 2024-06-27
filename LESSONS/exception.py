@@ -56,28 +56,28 @@
   #print("END")
 
 ## LETS CODE #1
-while True:
-  try:
-    divEnd = float(input("Dividend: "))
-    div = float(input("Divisor: "))
-    qou = divEnd/div
-    print(qou)
-    #ans = input("Y/N")
-    #if ans.upper() != 'Y' and ans.upper() !='N':
-      #break
+# while True:
+#   try:
+#     divEnd = float(input("Dividend: "))
+#     div = float(input("Divisor: "))
+#     qou = divEnd/div
+#     print(qou)
+#     #ans = input("Y/N")
+#     #if ans.upper() != 'Y' and ans.upper() !='N':
+#       #break
   
    
-  except ValueError:
-    print("Value Error")
+#   except ValueError:
+#     print("Value Error")
     
-  except TypeError:
-    print("Integers Only") 
-  except ZeroDivisionError:
-    print("None Zero Value")
-  else:
-    print("Okay Code")
-  finally:
-    print("End")
+#   except TypeError:
+#     print("Integers Only") 
+#   except ZeroDivisionError:
+#     print("None Zero Value")
+#   else:
+#     print("Okay Code")
+#   finally:
+#     print("End")
     
 
 
